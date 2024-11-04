@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Big Bro!</title>
+    <style>
+        body {
+            background-color: #87CEEB; /* light blue background */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #2196F3; /* blue text */
+        }
+        .message {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .confetti-piece {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          animation: fall 2s linear infinite;
+        }
+        
+        .confetti-piece.circle {
+          border-radius: 50%;
+        }
+        
+        .confetti-piece.square {
+          border-radius: 0;
+        }
+        
+        .confetti-piece.triangle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 5px 10px 5px;
+          border-color: transparent transparent #FF69B4 transparent;
+        }
+        
+        .confetti-piece {
+          top: 0;
+          left: 50%; /* Randomize left position */
+          transform: translateX(-50%);
+          animation-delay: 0s; /* Randomize animation delay */
+        }
+        
+        /* Randomize confetti position and animation delay */
+        .confetti-piece:nth-child(1) {
+          left: 10%;
+          animation-delay: 0.5s;
+        }
+        
+        .confetti-piece:nth-child(2) {
+          left: 20%;
+          animation-delay: 1.2s;
+        }
+        
+        .confetti-piece:nth-child(3) {
+          left: 30%;
+          animation-delay: 0.8s;
+        }
+        @keyframes fall {
+			0% {
+				top: 0;
+			}
+			100% {
+				top: 95vh;
+			}
+        }
+        
+        /* ... and so on for each confetti piece */
+        
+    </style>
+    <script>
+        function redirectToVideo() {
+            window.location.href = "https://www.youtube.com/watch?v=wpV-gGA4PSk";
+        }
+    </script>
+</head>
+<body>
+    <div class="confetti">
+		<script>
+			for (var i = 0; i < 100; i++) {
+				var confetti = document.createElement("div");
+				confetti.className = "confetti-piece";
+				var shape = Math.floor(Math.random() * 3);
+				if (shape === 0) {
+					confetti.className += " circle";
+					confetti.style.background = getRandomColor();
+				} else if (shape === 1) {
+					confetti.className += " square";
+					confetti.style.background = getRandomColor();
+				} else {
+					confetti.className += " triangle";
+					confetti.style.borderBottomColor = getRandomColor();
+				}
+				confetti.style.top = "0px";
+				confetti.style.left = Math.floor(Math.random() * 100) + "%";
+				confetti.style.animationDelay = Math.random() * 5 + "s"; // Random delay between 0 and 5 seconds
+				document.querySelector(".confetti").appendChild(confetti);
+				setTimeout(function() {
+					confetti.style.top = "-10px"; // Move the confetti off the screen
+					confetti.style.animation = "none"; // Stop the animation
+				}, Math.random() * 10000 + 5000); // Random time between 5 and 15 seconds
+				setTimeout(function() {
+					confetti.style.top = "0px"; // Move the confetti back to the top
+					confetti.style.animation = "fall 2s linear infinite"; // Restart the animation
+				}, Math.random() * 20000 + 10000); // Random time between 10 and 30 seconds
+			}
+			function getRandomColor() {
+				var colors = ["#FF69B4", "#FFC67D", "#8BC34A", "#03A9F4", "#FF9800"];
+				return colors[Math.floor(Math.random() * colors.length)];
+			}
+		</script>
+	</div>
+    <div class="container">
+        <div class="header">
+            <h1>Happy Birthday Big Bro!</h1>
+        </div>
+        <div class="message">
+            <p>On your special day, I wanted to take a moment to express how much you mean to me. You're an amazing brother and an incredible person. I hope your day is filled with love, laughter, and all your favorite things!</p>
+        </div>
+        <button class="button" onclick="redirectToVideo()">Click to see a surprise!</button>
+    </div>
+</body>
+</html>
