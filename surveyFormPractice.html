@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title id="title">Survey</title>
+  <link rel="stylesheet" type="text/css" href="surveyForm.css">
+  <h1>Survey Form</h1>
+</head>
+<body>
+  <p id="description">Please fill out the survey below:</p>
+  <form id="survey-form">
+    <div class="row">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter Your Name" required>
+    </div>
+    <br>
+    <div class="row">
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter Your Email" required>
+    </div>
+    <br>
+    <div class="row">
+      <label id="number-label" for="number">How old are you?:</label>
+      <input id="number" type="number" inputmode="numeric" pattern="[0-9]*" min="18" max="100" placeholder="Age" required>
+    </div>
+    <br>
+    <label id="dropdown-label" for="dropdown">What is your favorite food?</label>
+    <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="option1">Hamburger</option>
+        <option value="option2">Pizza</option>
+        <option value="option3">Pasta</option>
+      </select>
+      <br>
+      <br>
+    <label>How often do you eat out?</label>
+    <br>
+    <input type="radio" id="daily" name="frequency" value="daily">
+    <label for="daily">Daily</label>
+    <br>
+    <input type="radio" id="weekly" name="frequency" value="weekly">
+    <label for="weekly">Weekly</label>
+    <br>
+    <input type="radio" id="rarely" name="frequency" value="rarely">
+    <label for="rarely">Rarely</label>
+    <br>
+    <input type="radio" id="never" name="frequency" value="never">
+    <label for="never">Never</label>
+    <br>
+    <br>
+    <label>What types of cuisine do you enjoy?</label>
+    <br>
+    <input type="checkbox" id="italian" name="cuisine" value="italian">
+    <label for="italian">Italian</label>
+    <br>
+    <input type="checkbox" id="chinese" name="cuisine" value="chinese">
+    <label for="chinese">Chinese</label>
+    <br>
+    <input type="checkbox" id="mexican" name="cuisine" value="mexican">
+    <label for="mexican">Mexican</label>
+    <br>
+    <input type="checkbox" id="indian" name="cuisine" value="indian">
+    <label for="indian">Indian</label>
+    <br>
+    <label>Any additional comments or feedback?</label>
+    <br>
+    <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comments here"></textarea>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+      </form>
+</body>
+</html>
