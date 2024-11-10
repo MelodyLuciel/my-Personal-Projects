@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="techDocumentation.css">
+<title>Technical Documentation</title>
+</head>
+  <body>
+   <header>
+    <nav id="navbar">
+        <header>Technical Documentation for Python</header>
+   <ul>
+    <br />
+    <br />
+     <li><a class="nav-link" href="#Section_1">Introduction to Python Programming</a></li>
+     <li><a class="nav-link" href="#Section_2">Working with Data Types in Python</a></li>
+     <li><a class="nav-link" href="#Section_3">Control Flow and Functions in Python</a></li>
+     <li><a class="nav-link" href="#Section_4">Object-Oriented Programming (OOP) in Python</a></li>
+     <li><a class="nav-link" href="#Section_5">Advanced Python Topics</a></li>
+   </ul>
+     </nav>
+   </header>
+<main id="main-doc">
+   <h1>Technical Documentation</h1>
+    <p class="welcome">Welcome to the Technical Documentation for Python!</p>
+    <br />
+    <br />
+    <section class="main-section" id="Section_1">
+        <header class="sr-only">Introduction to Python Programming</header>
+      <h2>Introduction to Python Programming</h2>
+      <p>Python is a high-level, interpreted programming language known for its simplicity and readability. Developed by Guido van Rossum and first released in 1991, Python has grown into one of the most popular programming languages worldwide.</p>
+      <p>Python is dynamically typed, which means that variables do not need explicit declaration of their data types. The interpreter automatically infers the type based on the assigned value.</p>
+      <p>The syntax of Python emphasizes code readability, making it easy for both beginners and experienced programmers to learn and maintain Python code.</p>
+      <p>Some examples of Python code:</p>
+      <pre class="code-boxes">
+        <code># Hello World program in Python
+            print("Hello, World!")</code>
+      </pre>
+      <p>Python is widely used in:</p>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Analysis</li>
+        <li>Automation</li>
+        <li>Artificial Intelligence</li>
+        <li>Scientific Computing</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Example of a Python variable and data type
+            x = 10  # integer
+            y = "Python"  # string
+            print(type(x))  # <class 'int'>
+            print(type(y))  # <class 'str'></code>
+      </pre>
+      <p>Key features of Python include:</p>
+      <ul>
+        <li>Readable and clean syntax</li>
+        <li>Extensive standard library</li>
+        <li>Cross-platform compatibility</li>
+        <li>Open-source and free to use</li>
+        <li>Large community and support</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Simple function in Python
+            def greet(name):
+                return f"Hello, {name}!"
+            print(greet("Alice"))</code>
+      </pre>
+      <p>The language is object-oriented, meaning that it allows for the creation of classes and objects. Python also supports multiple programming paradigms, including functional, procedural, and imperative programming.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Loop through a list in Python
+            numbers = [1, 2, 3, 4, 5]
+            for num in numbers:
+                print(num)</code>
+      </pre>
+      <p>One of Python's most significant strengths is its large and active community. The Python Package Index (PyPI) hosts over 300,000 third-party libraries that extend Python’s capabilities across domains like web development, data science, and automation.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Define a class in Python
+            class Animal:
+                def __init__(self, name):
+                    self.name = name
+                def speak(self):
+                    print(f"{self.name} says hello!")
+            
+            dog = Animal("Dog")
+            dog.speak()
+            </code>
+      </pre>
+    </section>
+    <br />
+    <br />
+    <section class="main-section" id="Section_2">
+        <header class="sr-only">Section 2</header>
+      <h2>Working with Data Types in Python</h2>
+      <p>Python provides several built-in data types that help store different kinds of information. These include integers, floating-point numbers, strings, and boolean values.</p>
+      <p>Integers are whole numbers, both positive and negative. They can be used for mathematical operations like addition, subtraction, and division.
+        </p>
+        <p>Floating-point numbers represent real numbers with decimal points. They are used when precision is needed in calculations, such as in scientific computations.
+        </p>
+        <p></p>Strings are sequences of characters, such as words, sentences, and paragraphs. They are used to represent text or any other sequence of characters.
+        </p>
+        <p>Boolean values are either True or False, and are used to represent logical conditions or expressions.
+        </p>
+        </p>
+      <p>And also some code examples.</p>
+      <p>Like this one:</p>
+      <pre class="code-boxes">
+        <code># Example of an integer variable
+            age = 25
+            print(type(age))  # <class 'int'></code>
+      </pre>
+      <p>Methods for working with lists:</p>
+      <ul>
+        <li>.append()</li>
+        <li>.remove()</li>
+        <li>.pop()</li>
+        <li>.sort()</li>
+        <li>.reverse()</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Example of a floating-point variable
+            pi = 3.14159
+            print(type(pi))  # <class 'float'></code>
+      </pre>
+      <p>Common string methods:</p>
+      <ul>
+        <li>.lower()</li>
+        <li>.upper()</li>
+        <li>.split()</li>
+        <li>.replace()</li>
+        <li>.strip()</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Example of a string variable
+            greeting = "Hello, Python!"
+            print(greeting.upper())  # HELLO, PYTHON!</code>
+      </pre>
+      <p>Lists are ordered collections of elements, which can be of any data type. They are defined using square brackets, and elements are accessed via zero-based indexing.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># List in Python
+            fruits = ["apple", "banana", "cherry"]
+            fruits.append("date")
+            print(fruits)</code>
+      </pre>
+      <p>Dictionaries store key-value pairs, where each key is unique. They are defined using curly braces and are ideal for mapping relationships between values.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Dictionary in Python
+            person = {"name": "Alice", "age": 30}
+            print(person["name"])  # Alice
+            </code>
+      </pre>
+    </section>
+    <br />
+    <br />
+    <section class="main-section" id="Section_3">
+        <header class="sr-only">Section 3</header>
+      <h2>Control Flow and Functions in Python</h2>
+      <p>Control flow in Python allows you to make decisions in your code using if, elif, and else statements. These allow the program to execute different blocks of code based on certain conditions.</p>
+      <p>The for loop is used for iterating over sequences such as lists, strings, and ranges. It allows you to process items one by one in a structured manner.</p>
+      <p>And also some code examples.</p>
+      <p>Like this one:</p>
+      <pre class="code-boxes">
+        <code># Simple if-else statement
+            age = 18
+            if age >= 18:
+                print("Adult")
+            else:
+                print("Minor")</code>
+      </pre>
+      <p>Python control flow statements:</p>
+      <ul>
+        <li>if</li>
+        <li>elif</li>
+        <li>else</li>
+        <li>for</li>
+        <li>while</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Example of a for loop
+            for i in range(5):
+                print(i)</code>
+      </pre>
+      <p>Types of function arguments:</p>
+      <ul>
+        <li>Positional arguments: passed in the order defined.</li>
+        <li>Keyword arguments: passed by explicitly naming the paramenter.</li>
+        <li>Default arguments: assigned a default value if not provided.</li>
+        <li>Variable-length arguments: accepts any number of arguments.</li>
+        <li>Arbitrary keyword arguments: accepts any number of keyword arguments.</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># While loop with break statement
+            counter = 0
+            while counter < 5:
+                print(counter)
+                counter += 1
+                if counter == 3:
+                    break</code>
+      </pre>
+      <p>Python supports default arguments, which allows functions to be called with fewer arguments than defined, using default values for missing parameters.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Function with parameters
+            def multiply(a, b):
+                return a * b
+            print(multiply(2, 3))  # 6
+            </code>
+      </pre>
+      <p>Python supports variable-length arguments, which allows functions to accept any number of arguments.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Try-except block for error handling
+            try:
+                result = 10 / 0
+            except ZeroDivisionError:
+                print("Cannot divide by zero!")
+            </code>
+      </pre>
+    </section>
+    <br />
+    <br />
+    <section class="main-section" id="Section_4">
+        <header class="sr-only">Section 4</header>
+      <h2>Object-Oriented Programming (OOP) in Python</h2>
+      <p>Object-Oriented Programming (OOP) is a paradigm that organizes software design around data, or objects, rather than functions and logic. Python supports OOP and allows the creation of classes and objects.</p>
+      <p>A class in Python is a blueprint for creating objects. It defines attributes (variables) and methods (functions) that the objects of the class will have.</p>
+      <p>And also some code examples.</p>
+      <p>Like this one:</p>
+      <pre class="code-boxes">
+        <code># Defining a simple class
+            class Dog:
+                def __init__(self, name, age):
+                    self.name = name
+                    self.age = age
+                def bark(self):
+                    print(f"{self.name} barks!")
+                    
+            dog1 = Dog("Buddy", 3)
+            dog1.bark()  # Buddy barks!</code>
+      </pre>
+      <p>Key principles of Object-Oriented Programming (OOP):</p>
+      <ul>
+        <li>Encapsulation</li>
+        <li>Inheritance</li>
+        <li>Polymorphism</li>
+        <li>Abstraction</li>
+        <li>Code reuse</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code>var message = "Hello, World!";</code>
+      </pre>
+      <p>OOP advantages</p>
+      <ul>
+        <li>Modular and organized code</li>
+        <li>Easy to maintain and extend</li>
+        <li>Reusability through inheritance</li>
+        <li>Flexibility via polymorphism</li>
+        <li>Improved data security with Encapsulation/li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Example of inheritance
+            class Animal:
+                def speak(self):
+                    print("Animal speaks")
+            
+            class Dog(Animal):
+                def bark(self):
+                    print("Woof!")
+                    
+            dog = Dog()
+            dog.speak()  # Animal speaks
+            dog.bark()   # Woof!
+            </code>
+      </pre>
+      <p>Inheritance allows one class to inherit attributes and methods from another. This promotes code reuse and the creation of hierarchical class structures.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Polymorphism example
+            class Bird:
+                def sound(self):
+                    print("Chirp")
+            
+            class Dog:
+                def sound(self):
+                    print("Bark")
+            
+            def make_sound(animal):
+                animal.sound()
+            
+            bird = Bird()
+            dog = Dog()
+            make_sound(bird)  # Chirp
+            make_sound(dog)   # Bark
+            </code>
+      </pre>
+      <p>Encapsulation refers to the practice of hiding internal states of an object and only exposing a controlled interface. This is achieved through methods and properties.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Encapsulation example with getter and setter methods
+            class Account:
+                def __init__(self, balance):
+                    self.__balance = balance  # private attribute
+                
+                def deposit(self, amount):
+                    self.__balance += amount
+                    
+                def get_balance(self):
+                    return self.__balance
+                
+            account = Account(1000)
+            account.deposit(500)
+            print(account.get_balance())  # 1500
+            </code>
+      </pre>
+    </section>
+    <br />
+    <br />
+    <section class="main-section" id="Section_5">
+        <header class="sr-only">Section 5</header>
+      <h2>Advanced Python Topics</h2>
+      <p>Python is a versatile and powerful programming language that supports a wide range of advanced topics.</p>
+      <p>It also supports asynchronous programming, which allows for non-blocking I/O operations.</p>
+      <p>And also some code examples:</p>
+      <p>Like this one:</p>
+      <pre class="code-boxes">
+        <code># Generator function example
+            def countdown(n):
+                while n > 0:
+                    yield n
+                    n -= 1
+            
+            for i in countdown(5):
+                print(i)
+            </code>
+      </pre>
+      <p>Advanced Python topics include:</p>
+      <ul>
+        <li>Generators</li>
+        <li>Decorators</li>
+        <li>Context Managers</li>
+        <li>asynchronous programming</li>
+        <li>Memory Management</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Simple decorator example
+            def decorator(func):
+                def wrapper():
+                    print("Before function call")
+                    func()
+                    print("After function call")
+                return wrapper
+            
+            @decorator
+            def greet():
+                print("Hello!")
+            
+            greet()
+            </code>
+      </pre>
+      <p>Current Python programming tools:</p>
+      <ul>
+        <li>asincio for asynchronous programming</li>
+        <li>threading for multi-threading</li>
+        <li>multiprocessing for multi-processing</li>
+        <li>PyQt for GUI development</li>
+        <li>Pygame for game development</li>
+      </ul>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Using a context manager
+            with open('file.txt', 'w') as file:
+                file.write("Hello, world!")
+            # No need to manually close the file
+            </code>
+      </pre>
+      <p>Python's memory management system uses reference counting and garbage collection to automatically manage memory allocation and deallocation. Understanding this can help optimize performance, especially for large-scale applications</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Example of asynchronous programming with asyncio
+            import asyncio
+            
+            async def greet():
+                print("Hello")
+                await asyncio.sleep(1)
+                print("World")
+            
+            asyncio.run(greet())
+            </code>
+      </pre>
+      <p>Python also supports the use of regular expressions for pattern matching and text manipulation.</p>
+      <p>And some more code examples.</p>
+      <pre class="code-boxes">
+        <code># Multiprocessing example
+            from multiprocessing import Process
+            
+            def print_numbers():
+                for i in range(5):
+                    print(i)
+            
+            p = Process(target=print_numbers)
+            p.start()
+            p.join()
+            </code>
+      </pre>
+    </section>
+</main>
+<footer>
+   <p class="container">Copyright ©2024 Melody S</p>
+</footer>
+</body>
+</html>
